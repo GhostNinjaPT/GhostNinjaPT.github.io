@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> Ficha revisoes - Questão 3 </title>
+        <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    </head>
+         
+    <script type="text/javascript"> //ou language="javascript"
+
+        function Calcular_Area_Quadrado() {
+            
+            var n , area
+
+            n = document.getElementById("Lado_Quadrado").value
+
+            area = n * n
+
+            document.write("A area do quadrado é "+ area +".<br><br>")
+
+            const Bt_Voltar = document.createElement('button')
+            Bt_Voltar.textContent = 'Voltar ao menu'
+            Bt_Voltar.onclick = function(){
+                location.href="Index.html"
+            }
+            Bt_Voltar.style.backgroundColor = "blue"
+            Bt_Voltar.style.size = "16px"
+            Bt_Voltar.style.color = "white"
+            Bt_Voltar.style.padding = "15px 32px"
+            Bt_Voltar.style.textAlign = "center"
+            document.body.appendChild(Bt_Voltar)
+
+        }
+
+    </script>
+
+
+    <body>
+
+        <h1 class="titulo1"> Ficha de revisoes - Questão 3</h1>
+
+        Introduza o lado do quadrado
+        <input type="text" id="Lado_Quadrado">
+        <br>
+        <br>
+
+        <input class="botao1" type="button" value="Calcular a area  do quadrado." onclick="Calcular_Area_Quadrado()">
+        <br>
+        <br>
+        <a href="Index.html"> <button class="botao2"> Voltar para o menu </button> </a>
+
+    </body>
+
+</html>

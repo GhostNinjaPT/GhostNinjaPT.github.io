@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> Ficha revisoes - Questão 2 (outra forma)</title>
+        <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    </head>
+         
+
+
+    <body>
+
+        <h1 class="titulo1"> Ficha de revisoes - Questão 2 (outra forma)</h1>
+
+        <script type="text/javascript"> //ou language="javascript"
+        
+            var n,soma , valor
+
+            soma = 0
+
+            n = prompt("Quandos elementos deseja digitar?\n\n")
+
+            for (i = 0; i < n; i++) {
+
+                valor = prompt("Insira o numero " + (i+1))
+
+                soma = parseInt(soma) + parseInt(valor)
+
+            }
+
+            document.write("O valor da soma é " + soma + ".<br><br>")
+
+            function Volta_Ao_Menu() {
+                location.href = "Index.html"
+            }
+
+        </script>
+
+        <input type="button" value="Voltar ao menu" class="botao2" onclick="Volta_Ao_Menu()">
+
+    </body>
+
+</html>

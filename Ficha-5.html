@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> Ficha revisoes - Questão 5 </title>
+        <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    </head>
+         
+    <script type="text/javascript">
+
+        function Calcular_Media() {
+        
+            var num_Idades , num_pessoas , media , a
+        
+            num_Idades = document.getElementById("Txt_Idades").value
+            num_Idades = num_Idades.split(",")
+            
+            a = num_Idades.length
+            
+            media = 0
+
+            num_pessoas = a
+
+            for (i = 0; i < a;i++) {
+                media = parseInt(media) + parseInt(num_Idades[i]) 
+            }
+            media = parseInt(media) / parseInt(a)
+
+            document.write("A media das idades é "+ media + ".<br><br>")
+
+            const Bt_Voltar = document.createElement("button")
+            Bt_Voltar.onclick = function(){
+                location.href="Index.html"  
+            }
+            Bt_Voltar.style.backgroundColor = "blue"
+            Bt_Voltar.style.size = "16px"
+            Bt_Voltar.style.color = "white"
+            Bt_Voltar.style.padding = "15px 32px"
+            Bt_Voltar.style.textAlign = "center"
+            Bt_Voltar.textContent ="Voltar ao menu"
+            document.body.appendChild(Bt_Voltar)
+
+        }
+
+    </script>
+
+
+    <body>
+
+        <h1 class="titulo1"> Ficha de revisoes - Questão 5</h1>
+        
+        Introduza as idades divididas por virgula
+        <input type="text" id="Txt_Idades">
+        <br>
+        <br>
+        <input type="button" class="botao1" value="Calcular Média de idades" onclick="Calcular_Media()">
+        <br>
+        <br>
+        <a href="Index.html"> <button class="botao2"> Voltar para o menu </button> </a>
+
+    </body>
+
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> Ficha revisoes - Questão 4 </title>
+        <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    </head>
+         
+
+
+    <body>
+
+        <h1 class="titulo1"> Ficha de revisoes - Questão 4</h1>
+
+        <script type="text/javascript"> //ou language="javascript"
+        
+        var dia , mes , ano , hoje , dia_semana , horas , minutos , segundos
+            
+            hoje = new Date()
+            
+            dia = hoje.getDate()
+            mes = hoje.getMonth()
+            ano = hoje.getFullYear()
+            dia_semana = hoje.getDay()
+            
+            horas = hoje.getHours()
+            minutos = hoje.getMinutes()
+            segundos = hoje.getSeconds()
+            
+            document.write("Calendario e horas atuais.<br><br>")
+            document.write( dia + "/" + (mes + 1) + "/" + ano + "<br>")
+            document.write( horas + ":" + minutos + ":" + segundos +"<br><br>" )
+            
+            switch (dia_semana) {
+                case 0:
+                    document.write("Domingo")
+                    break;
+                
+                case 1:
+                    document.write("Segunda-Feira")
+                    break;
+            
+                case 2:
+                    document.write("Terca-Feira")
+                    break;
+            
+                case 3:
+                    document.write("Quarta-Feira")
+                    break;
+            
+                case 4:
+                    document.write("Quinta-Feira")
+                    break;
+            
+                case 5:
+                    document.write("Sexta-Feira")
+                    break;
+            
+                case 6:
+                    document.write("Sábado")
+                    break;
+            
+                default:
+                    break;
+            }
+        
+
+        </script>
+
+        <br>
+        <br>
+        <a href="Index.html"> <button class="botao2"> Voltar para o menu </button> </a>
+
+    </body>
+
+</html>
+
